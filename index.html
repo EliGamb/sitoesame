@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> All Night Long</title>
+        <script src="https://kit.fontawesome.com/4e5dc31ccf.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="stile.css">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <script type="module">
+
+            import EmbeddedPageSdk from "https://app.realeye.io/sdk/js/testRunnerEmbeddableSdk-1.7.1.js"
+            
+            /**
+             * NOTICE: The SDK MUST be created when the UI is fully loaded and ready.
+             * So, if you are using (modern) frontend framework please use its proper event to create the SDK when everything is ready and fully rendered, instead of the vanilla JS "DOMContentLoaded" event.
+             */
+            window.addEventListener("DOMContentLoaded", () => {
+               const debugMode = false;
+               const stimulusId = null; // Or Stimulus/Item UUID from RealEye Study, e.g. "61560b76-3d31-4f0e-b530-55bd8709aadb"
+               const forceRun = false;
+            
+               const reSdk = new EmbeddedPageSdk(debugMode, stimulusId, forceRun)
+            });
+            
+            </script>
+
+
+        
+    </head>
+    <body>
+      <!--------------- HEADER ------------->
+      <section data-re-aoi-name="navbar" id="header">
+        <a href="index.html">
+            <img src="canva/Logo_rosa.png" width="300" height="60" class="logo" alt="">
+        </a>
+    
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+    
+            </ul>
+        </div>
+    
+      </section>
+    
+      
+        <!--------- BOX SCOMPOSTA --------->
+          <section data-re-aoi-name="BOX SCOMPOSTA" id="hero-head" class="section-p1">
+            <img src="canva/HEADER SITO.png" alt="">
+            <div>
+                <h2>All Night Long</h2>
+                <p> Una box speciale per farvi vivere una serata indimenticabile all’insegna del divertimento. Sempre originale e pensata su misura per voi. Lasciatevi sorprendere!
+                </p>
+
+                <br><br>
+                <button id="about-btn" class="normal"> Scopri chi siamo </button>
+
+
+            </div>
+       
+        </section>
+
+        <!-- BOX SPEDIZIONE-->
+        <section id="banner" class="section-m1">
+          <h2>"Regala un sorriso, <br>consegna veloce garantita!"</h2>
+          
+          <p>
+            Sorprendi chi ami con un regalo speciale, recapitato direttamente 
+            a domicilio con cura e attenzione ai dettagli. Spedizione rapida e gratuita, messaggi personalizzati scritti a mano e un tocco di eleganza in ogni box!
+          </p>
+          <br>
+            <h5>Ordina entro le 15:00 per la consegna il giorno dopo,<br> 
+                entro le 10:00 per la consegna in giornata.</h4> 
+            <br>
+            <button id="shop-btn" class="normal">Vai allo Shop</button>
+
+      </section>  
+
+      <br><br>
+
+      <!------ SLIDE SHOW ------->
+     <!-- <section class="box"> 
+        <h4 class="box-category">Le Nostre Box</h4>
+          <button class="pre-btn"><img src="immagini boxes /acc/arrow.png" alt="" class="src"></button>
+          <button class="nxt-btn"><img src="immagini boxes /acc/arrow.png" alt="" class="src"></button>
+    <div class="box-container">
+
+                <div class="box-card">
+                    <div class="box-image">
+                       <img src="immagini boxes /s9/s9-1.png" height="100%" width="100%" class="src">
+                       <button class="card-btn">Aggiungi al carrello</button>
+                    </div>
+                    <div class="box info">
+                       <h6 class="box-name">Meglio del Botox</h6>
+                       <p class="box-short-description">  Set per una serata Relax & Chill </p>
+                       <span class="price">35€</span>
+                    </div>
+                </div>
+
+                <div class="box-card">
+                 <div class="box-image">
+                   <img src="immagini boxes /s4/s4-1.png" height="100%" width="100%" class="src">
+                    <button class="card-btn">Aggiungi al carrello</button>
+                 </div>
+                 <div class="box info">
+                    <h1 class="box-name">Crealo a modo tuo</h1>
+                    <p class="box-short-description"> Set per la creazione di oggetti in argilla</p>
+                    <span class="price">45€</span>
+                 </div>
+             </div>
+
+             <div class="box-card">
+               <div class="box-image">
+                  <img src="immagini boxes /s1/s1-1.png" height="100%" width="100%" class="src">
+                  <button class="card-btn">Aggiungi al carrello</button>
+               </div>
+               <div class="box info">
+                  <h4 class="box-name">Indossa il tuo IO</h4>
+                  <p class="box-short-description"> Set per la pittura di borse di tela</p>
+                  <span class="price">40€</span>
+               </div>
+           </div>
+
+           <div class="box-card">
+             <div class="box-image">
+                <img src="immagini boxes /s7/s7-1.png" height="100%" width="100%" class="src">
+                <button class="card-btn">Aggiungi al carrello</button>
+             </div>
+             <div class="box info">
+                <h5 class="box-name">Maestro Pasticcere</h5>
+                <p class="box-short-description">Box per cucinare e decorare biscotti</p>
+                <span class="price">45€</span>
+             </div>
+         </div>
+
+         <div class="box-card">
+           <div class="box-image">
+              <img src="immagini boxes /s5/s5-1.png" height="100%" width="100%" class="src">
+              <button class="card-btn">Aggiungi al carrello</button>
+           </div>
+           <div class="box info">
+              <h3 class="box-name">Sentiti Nonna </h3>
+              <p class="box-short-description"> Box per la creazione di animali con l'uncinetto</p>
+              <span class="price">50€</span>
+           </div>
+       </div>
+
+       <div class="box-card">
+         <div class="box-image">
+            <img src="immagini boxes /s6/s6-1.png" height="100%" width="100%" class="src">
+            <button class="card-btn">Aggiungi al carrello</button>
+         </div>
+         <div class="box info">
+            <h6 class="box-name">Mettilo al polso</h6>
+            <p class="box-short-description">Box per creare bracciali e collane con perline</p>
+            <span class="price">40€</span>
+         </div>
+     </div>
+
+     <div class="box-card">
+       <div class="box-image">
+          <img src="immagini boxes /s3/s3-1.png" height="100%" width="100%" class="src">
+          <button class=" card-btn">Aggiungi al carrello</button>
+       </div>
+       <div class="box info">
+          <h1 class="box-name">Bevi con Stile</h1>
+          <p class="box-short-description"> una mini descrizione</p>
+          <span class="price">45€</span>
+       </div>
+   </div>
+
+   <div class="box-card">
+     <div class="box-image">
+        <img src="immagini boxes /s8/s8-1.png" height="100%" width="100%" class="src">
+        <button class="card-btn">Aggiungi al carrello</button>
+     </div>
+     <div class="box info">
+        <h4 class="box-name">Bartender Pro</h4>
+        <p class="box-short-description"> una mini descrizione</p>
+        <span class="price">50€</span>
+     </div>
+ </div>
+
+    </div>
+ </section>
+-->
+
+<section id="carouselSection" class="section-p1">
+    <h2>Le nostre box</h2>
+    <br><br>
+    <div class="carousel-wrapper">
+        <button class="carousel-button prev-btn" onclick="slide(-1)">&#10094;</button>
+
+        <div class="carousel-scroll-wrapper">
+            <div class="carousel-track">
+                <div class="carousel-item">
+                    <div class="carousel-image-wrapper">
+                        <a href="sproduct1.html">
+                        <img src="immagini boxes /s1/s1-1.png" alt="Oggetto 1" class="carousel-image">
+                   </a> 
+                </div>
+                    <div class="carousel-description">
+                        <h5> Pittura Totebag</h5>
+                        <h6>40€</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image-wrapper">
+                        <a href="sproduct2.html">
+                        <img src="immagini boxes /s2/s2-1.png" alt="Oggetto 2" class="carousel-image">
+                  </a>  
+                </div>
+                    <div class="carousel-description">
+                        <h5> Il delitto<br> perfetto</h5>
+                        <h6> 45€</h6>
+                    </div>
+                </div>
+                <!-- Aggiungi altre card qui -->
+
+                <div class="carousel-item">
+                    <div class="carousel-image-wrapper">
+                        <a href="sproduct3.html">
+                        <img src="immagini boxes /s3/s3-1.png" alt="Oggetto 2" class="carousel-image">
+                   </a> 
+                </div>
+                    <div class="carousel-description">
+                        <h5>Pittura su <br> calici</h5>
+                        <h6>45€</h6>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-image-wrapper">
+                        <a href="sproduct4.html">
+                        <img src="immagini boxes /s4/s4-1.png" alt="Oggetto 2" class="carousel-image">
+                  </a>  
+                </div>
+                    <div class="carousel-description">
+                        <h5>Argilla</h5>
+                        <h6>45€</h6>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-image-wrapper">
+                        <a href="sproduct5.html">
+                        <img src="immagini boxes /s5/s5-1.png" alt="Oggetto 2" class="carousel-image">
+                 </a>  
+                 </div>
+                    <div class="carousel-description">
+                        <h5>Uncinetto</h5>
+                        <h6>50€</h6>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-image-wrapper">
+                        <a href="sproduct6.html">
+                        <img src="immagini boxes /s6/s6-1.png" alt="Oggetto 2" class="carousel-image">
+                  </a>  </div>
+                    <div class="carousel-description">
+                        <h5>Creazione  <br> bracciali</h5>
+                        <h6>40€</h6>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-image-wrapper">
+                        <a href="sproduct7.html">
+                        <img src="immagini boxes /s7/s7-1.png" alt="Oggetto 2" class="carousel-image">
+                </a>    
+            </div>
+                    <div class="carousel-description">
+                        <h5>Ricette <br> creative</h5>
+                        <h6> 45€</h6>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-image-wrapper">
+                        <a href="sproduct8.html">
+                        <img src="immagini boxes /s8/s8-1.png" alt="Oggetto 2" class="carousel-image">
+                   </a> 
+                </div>
+                    <div class="carousel-description">
+                        <h5>Mocktails:<br> la sfida</h5>
+                        <h6> 50€</h6>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-image-wrapper">
+                        <a href="sproduct9.html">
+                        <img src="immagini boxes /s9/s9-1.png" alt="Oggetto 2" class="carousel-image">
+                 </a>   
+                </div>
+                    <div class="carousel-description">
+                        <h5>skin care  </h5>
+                        <h6>35€</h6>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <button class="carousel-button next-btn" onclick="slide(1)">&#10095;</button>
+    </div>
+</section>
+
+
+<!-- Recensioni + Slideshow-->
+         <section id="product1-review" class="section-p1">
+          <h2>Cosa dicono di noi</h2>
+          <br>
+          <div class="slider-container">
+              <div class="pro-container-review">
+                  <div class="review-card">
+                      <div class="review-header">
+                          <h5 class="user-name">
+                              Mario R. 
+                              <i class="fa-solid fa-circle-check verified-icon"></i>
+                          </h5>
+                          <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+                      <p class="review-text">"Esperienza fantastica! La box era curata nei minimi dettagli e ha reso la serata con la mia ragazza davvero speciale."</p>
+                      <span class="location">📍 Milano, Italia</span>
+                  </div>
+      
+                  <div class="review-card">
+                      <div class="review-header">
+                          <h5 class="user-name">
+                              Giulia S.
+                              <i class="fa-solid fa-circle-check verified-icon"></i>
+                          </h5>
+                          <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-regular fa-star"></i> <!-- 4 stelle -->
+                          </div>
+                      </div>
+                      <p class="review-text">"Un’idea geniale per passare una serata diversa! Abbiamo provato la box con gli amici ed è stato super divertente. Consigliatissima!"</p>
+                      <span class="location">📍 Roma, Italia</span>
+                  </div>
+
+                  <div class="review-card">
+                    <div class="review-header">
+                        <h5 class="user-name">
+                            Luca V.
+                            <i class="fa-solid fa-circle-check verified-icon"></i>
+                        </h5>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">"Non pensavo che una semplice box potesse creare un’atmosfera così magica! Perfetta per un appuntamento speciale, tutto scelto con attenzione. La riprenderò!"</p>
+                    <span class="location">📍 Torino, Italia</span>
+                </div>
+    
+                <div class="review-card">
+                  <div class="review-header">
+                      <h5 class="user-name">
+                          Serena B.
+                          <i class="fa-solid fa-circle-check verified-icon"></i>
+                      </h5>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                      </div>
+                  </div>
+                  <p class="review-text">"Abbiamo ricevuto la box come regalo e ci è piaciuta tantissimo! Perfetta per una serata rilassante in coppia, con sorprese davvero originali. Un’ottima alternativa alle solite uscite!"</p>
+                  <span class="location">📍 Napoli, Italia</span>
+              </div>
+  
+              <div class="review-card">
+                <div class="review-header">
+                    <h5 class="user-name">
+                        Andrea P. 
+                        <i class="fa-solid fa-circle-check verified-icon"></i>
+                    </h5>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <p class="review-text">"Ottima esperienza! Ho scelto la box per una serata con gli amici e ci siamo divertiti un sacco. Ne proveremo sicuramente un’altra!"</p>
+                <span class="location">📍 Firenze, Italia</span>
+            </div>
+                  <div class="review-card">
+                      <div class="review-header">
+                          <h5 class="user-name">
+                              Valentina M.
+                              <i class="fa-solid fa-circle-check verified-icon"></i>
+                          </h5>
+                          <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+                      <p class="review-text">"Tutto perfetto! La box era ben confezionata e con una selezione molto curata. Un’idea regalo fantastica per chi ama le esperienze particolari!"</p>
+                      <span class="location">📍 Bologna, Italia</span>
+                  </div>
+
+                  <div class="review-card">
+                    <div class="review-header">
+                        <h5 class="user-name">
+                            Marco D.
+                            <i class="fa-solid fa-circle-check verified-icon"></i>
+                        </h5>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">"Esperienza bellissima! Abbiamo provato la box per coppie ed è stata una serata diversa dal solito, piena di dettagli romantici. Sicuramente da ripetere!"</p>
+                    <span class="location">📍 Genova, Italia</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <h5 class="user-name">
+                            Elisa F.
+                            <i class="fa-solid fa-circle-check verified-icon"></i>
+                        </h5>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">"Ho acquistato la box per il compleanno del mio fidanzato ed è stata un successo! Una vera sorpresa che ha reso la serata indimenticabile!"</p>
+                    <span class="location">📍 Verona, Italia</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <h5 class="user-name">
+                            Francesco C.
+                            <i class="fa-solid fa-circle-check verified-icon"></i>
+                        </h5>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">"Idea fantastica per chi vuole vivere un’esperienza diversa! La box conteneva esattamente ciò di cui avevamo bisogno per una serata rilassante e divertente. Consegna veloce e packaging molto elegante!"</p>
+                    <span class="location">📍 Palermo, Italia</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <h5 class="user-name">
+                         Martina G.
+                            <i class="fa-solid fa-circle-check verified-icon"></i>
+                        </h5>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">"Abbiamo scelto questa box per una serata tra amici e ci siamo trovati benissimo! L’idea è originale, i materiali di qualità e tutto è curato nei dettagli."</p>
+                    <span class="location">📍 Venezia, Italia</span>
+                </div>
+
+              </div>
+          </div>
+      </section>
+      
+<!----------GET INSPIRED--------------->
+
+<section id="image-gallery" class="section-p1">
+  <h1 class="gallery-title"> # Lasciati Ispirare </h1>
+  <div class="gallery-container">
+    <div class="image-card"><img src="getinspired/biscotti/b1.jpg" ></div>
+    <div class="image-card"><img src="getinspired/45fdfa5fb66119bf30935c11256805fb.jpg" ></div>
+    <div class="image-card"><img src="getinspired/2bd7fc9e880c0ee68be54b9563c15c81.jpg" ></div>
+    <div class="image-card"><img src="getinspired/totebag/t6.jpg" ></div>
+    <div class="image-card"><img src="getinspired/b20bcb12d38d13cc477c8b2de8488ab5.jpg" ></div>
+    <div class="image-card"><img src="getinspired/uncinetto/c5.jpg" ></div>
+    <div class="image-card"><img src="getinspired/wineglasspainting/w6.jpg" ></div>
+    <div class="image-card"><img src="getinspired/Macramé Rainbow.jpg"></div>
+    <div class="image-card"><img src="getinspired/clay/clay9.jpg" ></div>
+    <div class="image-card"><img src="getinspired/biscotti/b3.jpg" ></div>
+  </div>
+</section>
+
+<!--VIDEO PUBBLICITA'-
+<div class="video">
+    <h1>Scopri il nostro mondo All Night Long: entra nel
+         cuore del nostro brand!</h1>
+       <div class="video-row">
+            <div class="video-col">
+                <div class="feature-img">
+                  <video width="100%" controls autoplay poster="immagini boxes /video-screen copiaj.pg.jpg">
+                    <source src="video_pawesome_music copia.mp4" type="video/mp4">
+                  </video>
+                  <p> </p>
+                  <p> </p>
+                </div>
+            </div>
+      </div>
+  </div> 
+-->
+  
+        <!------------------ FOOTER ------------------> 
+
+        <section class="footer"> 
+          <div class="row">
+          <div class="col">
+            <a href="index.html">
+            <img src="canva/Logo_rosa.png" class="logo"></a>
+            <p class="testo-centrato">Perfettamente confezionato, amorevolmente selezionato e curato con attenzione, All Night Long è il servizio che consegna un divertimento unico e pensato con il cuore.</p>
+          </div>
+          
+          <div class="col">
+            <h6>Office</h6>
+
+            <ul>
+              <li> <i class="fa-solid fa-map-pin"></i> Via Garibaldi 11 bis,Torino (TO),10122</li>
+              <li> <i class="fa-regular fa-envelope"></i>info.allnightlong@gmail.com</li>
+              <li> <i class="fa-regular fa-phone"></i> 0584 00987</li>
+              <li> <i class="fa-regular fa-clock"></i>  8:30 - 20:00</li>
+           </ul>
+           
+          
+          </div>
+          
+          <div class="col"> 
+              <h6>Links</h6>
+               <ul>
+                  <li> <a href="index.html">Home</a></li>
+                  <li> <a href="about.html">Chi Siamo</a></li>
+                  <li> <a href="shop.html">Shop</a></li>
+               </ul>
+               <div class="social-icons">
+                   <i class="fa-brands fa-instagram"></i>
+                   <i class="fa-brands fa-tiktok"></i>
+                   <i class="fa-brands fa-threads"></i>
+            
+               </div>
+          </div>
+          <hr>
+          <p class="copyright">All Night Long © 2025 - All Rights Reserved</p>
+        </section> 
+          
+       
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector(".pro-container-review");
+    const reviews = slider.innerHTML; // Duplica le recensioni per scorrimento infinito
+    slider.innerHTML += reviews;  
+
+    let speed = 0.5; // Velocità più lenta
+    let scrollAmount = 0;
+
+    function scrollLoop() {
+        scrollAmount += speed;
+        if (scrollAmount >= slider.scrollWidth / 2) {
+            scrollAmount = 0; // Resetta quando arriva a metà (effetto infinito)
+        }
+        slider.style.transform = `translateX(-${scrollAmount}px)`;
+        requestAnimationFrame(scrollLoop);
+    }
+
+    scrollLoop();
+});
+
+      </script>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("about-btn").addEventListener("click", function () {
+    window.location.href = "about.html"; // Reindirizza alla pagina About
+  });
+});
+
+      </script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const slider = document.querySelector(".review-carousel");
+        const reviews = slider.innerHTML; // Duplica le recensioni per scorrimento infinito
+        slider.innerHTML += reviews;  
+    
+        let speed = 0.5; // Velocità più lenta
+        let scrollAmount = 0;
+    
+        function scrollLoop() {
+            scrollAmount += speed;
+            if (scrollAmount >= slider.scrollWidth / 2) {
+                scrollAmount = 0; // Resetta quando arriva a metà (effetto infinito)
+            }
+            slider.style.transform = `translateX(-${scrollAmount}px)`;
+            requestAnimationFrame(scrollLoop);
+        }
+    
+        scrollLoop();
+    });
+    </script>
+    
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const scrollContainer = document.querySelector(".carousel-track");
+    const items = document.querySelectorAll(".carousel-item");
+    const itemWidth = items[0].offsetWidth + 20; // Larghezza della card + gap
+    let currentIndex = 0;
+
+    // Funzione per spostarsi avanti e indietro
+    function slide(direction) {
+        // Calcola il nuovo indice
+        currentIndex += direction;
+
+        // Evita di uscire dai limiti
+        if (currentIndex < 0) {
+            currentIndex = items.length - 1; // Torna all'ultima card
+        } else if (currentIndex >= items.length) {
+            currentIndex = 0; // Torna alla prima card
+        }
+
+        // Calcola la posizione da applicare alla track
+        const newTransformValue = -(currentIndex * itemWidth);
+
+        // Sposta la track
+        scrollContainer.style.transform = `translateX(${newTransformValue}px)`;
+    }
+
+    // Aggiungi gli eventi per i pulsanti
+    document.querySelector(".prev-btn").addEventListener("click", () => slide(-1));
+    document.querySelector(".next-btn").addEventListener("click", () => slide(1));
+});
+
+  </script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title> Global Boxes </title>
+        <script src="https://kit.fontawesome.com/4e5dc31ccf.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="stile.css">
+
+        <script type="module">
+
+            import EmbeddedPageSdk from "https://app.realeye.io/sdk/js/testRunnerEmbeddableSdk-1.7.1.js"
+            
+            /**
+             * NOTICE: The SDK MUST be created when the UI is fully loaded and ready.
+             * So, if you are using (modern) frontend framework please use its proper event to create the SDK when everything is ready and fully rendered, instead of the vanilla JS "DOMContentLoaded" event.
+             */
+            window.addEventListener("DOMContentLoaded", () => {
+               const debugMode = false;
+               const stimulusId = null; // Or Stimulus/Item UUID from RealEye Study, e.g. "61560b76-3d31-4f0e-b530-55bd8709aadb"
+               const forceRun = false;
+            
+               const reSdk = new EmbeddedPageSdk(debugMode, stimulusId, forceRun)
+            });
+            
+            </script>
+     
+    </head>
+    <body class="checkout-page">
+
+<div class="checkout-container">
+  
+    <form id="checkout-form">
+        
+        <!-- Informazioni personali -->
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div class="form-group">
+            <label for="cognome">Cognome</label>
+            <input type="text" id="cognome" name="cognome" required>
+        </div>
+
+        <!-- Indirizzo di spedizione -->
+        <h3>Indirizzo di Spedizione</h3>
+        <div class="form-group">
+            <label for="via-spedizione">Via</label>
+            <input type="text" id="via-spedizione" name="via-spedizione" required>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="civico-spedizione">N° Civico</label>
+                <input type="text" id="civico-spedizione" name="civico-spedizione" required>
+            </div>
+            <div class="form-group">
+                <label for="cap-spedizione">CAP</label>
+                <input type="text" id="cap-spedizione" name="cap-spedizione" required>
+            </div>
+        </div>
+
+        <!-- Indirizzo di Fatturazione -->
+        <h3>Indirizzo di Fatturazione</h3>
+        <div class="form-group">
+            <label><input type="checkbox" id="same-address"> Uguale all'indirizzo di spedizione</label>
+        </div>
+
+        <div id="billing-address">
+            <div class="form-group">
+                <label for="via-fatturazione">Via</label>
+                <input type="text" id="via-fatturazione" name="via-fatturazione" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="civico-fatturazione">N° Civico</label>
+                    <input type="text" id="civico-fatturazione" name="civico-fatturazione" required>
+                </div>
+                <div class="form-group">
+                    <label for="cap-fatturazione">CAP</label>
+                    <input type="text" id="cap-fatturazione" name="cap-fatturazione" required>
+                </div>
+            </div>
+        </div>
+
+        <!-- Note Aggiuntive -->
+        <div class="form-group">
+            <label for="note">Note Aggiuntive</label>
+            <textarea id="note" name="note" rows="3"></textarea>
+        </div>
+
+        <!-- Metodo di pagamento -->
+        <h3>Metodo di Pagamento</h3>
+        <div class="form-group">
+            <label><input type="radio" name="pagamento" value="carta" required> Carta di Credito</label>
+            <label><input type="radio" name="pagamento" value="paypal"> PayPal</label>
+            <label><input type="radio" name="pagamento" value="bonifico"> Bonifico Bancario</label>
+        </div>
+
+        <!-- Dati Carta di Credito -->
+        <div id="carta-info" class="hidden">
+            <div class="form-group">
+                <label for="numero-carta">Numero Carta</label>
+                <input type="text" id="numero-carta" name="numero-carta">
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="scadenza">Scadenza</label>
+                    <input type="month" id="scadenza" name="scadenza">
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" maxlength="3">
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottone per completare l'ordine -->
+        <button type="submit" class="checkout-btn">Conferma Ordine</button>
+    </form>
+</div>
+
+<script>document.addEventListener("DOMContentLoaded", function () {
+    const sameAddressCheckbox = document.getElementById("same-address");
+    const billingAddress = document.getElementById("billing-address");
+    const paymentMethods = document.querySelectorAll("input[name='pagamento']");
+    const cardInfo = document.getElementById("carta-info");
+
+    // Mostra/Nasconde l'indirizzo di fatturazione
+    sameAddressCheckbox.addEventListener("change", function () {
+        billingAddress.style.display = this.checked ? "none" : "block";
+    });
+
+    // Mostra/Nasconde i dati della carta di credito
+    paymentMethods.forEach(method => {
+        method.addEventListener("change", function () {
+            cardInfo.classList.toggle("hidden", this.value !== "carta");
+        });
+    });
+});
+</script>
+<script src="script.js"></script>
+</body>
+</html>

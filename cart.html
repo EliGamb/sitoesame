@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title> Global Boxes </title>
+        <script src="https://kit.fontawesome.com/4e5dc31ccf.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="stile.css">
+     
+        <script type="module">
+
+          import EmbeddedPageSdk from "https://app.realeye.io/sdk/js/testRunnerEmbeddableSdk-1.7.1.js"
+          
+          /**
+           * NOTICE: The SDK MUST be created when the UI is fully loaded and ready.
+           * So, if you are using (modern) frontend framework please use its proper event to create the SDK when everything is ready and fully rendered, instead of the vanilla JS "DOMContentLoaded" event.
+           */
+          window.addEventListener("DOMContentLoaded", () => {
+             const debugMode = false;
+             const stimulusId = null; // Or Stimulus/Item UUID from RealEye Study, e.g. "61560b76-3d31-4f0e-b530-55bd8709aadb"
+             const forceRun = false;
+          
+             const reSdk = new EmbeddedPageSdk(debugMode, stimulusId, forceRun)
+          });
+          
+          </script>
+    </head>
+    <body>
+
+      <!------------HEADER---------> 
+      <section id="header">
+        <a href="index.html">
+            <img src="canva/Logo_rosa.png" width="300" height="60" class="logo" alt="">
+        </a>
+    
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active"href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+    
+            </ul>
+        </div>
+    
+      </section>
+        <section id="cart-header">
+            <h2> #Carrello</h2>
+
+        </section>
+
+         <!-------------BACK TO ------------->
+
+     <section id="back-section">
+      <a href="index.html" class="back-to">
+          <i class="fas fa-arrow-left"></i>
+          <p> Torna alla Home</p>
+      </a>
+  </section>
+
+
+        <!----------------GRIGLIA CARRELLO-------------------->
+
+        <section id="cart" class="section-p1">
+          <table>
+              <thead>
+                  <tr>
+                      <th>Elimina</th>
+                      <th>Prodotto</th>
+                      <th>Prezzo</th>
+                      <th>Quantità</th>
+                      <th>Subtotale</th>
+                  </tr>
+              </thead>
+              <tbody id="cart">
+                  <tr class="cart-item">
+                      <td><button class="remove-btn"><i class="fa-regular fa-circle-xmark"></i></button></td>
+                      <td class="product-cell">
+                          <img src="immagini boxes /s3/s3-1.png" alt="">
+                          <span>Pittura su calici </span>
+                      </td>
+                      <td class="price">45€</td>
+                      <td><input type="number" value="1" min="1" class="quantity"></td>
+                      <td class="subtotal">45€</td>
+                  </tr>
+                  <tr class="cart-item">
+                      <td><button class="remove-btn"><i class="fa-regular fa-circle-xmark"></i></button></td>
+                      <td class="product-cell">
+                          <img src="immagini boxes /s4/s4-1.png" alt="">
+                          <span>Argilla</span>
+                      </td>
+                      <td class="price">45€</td>
+                      <td><input type="number" value="1" min="1" class="quantity"></td>
+                      <td class="subtotal">45€</td>
+                  </tr>
+                  <tr class="cart-item">
+                      <td><button class="remove-btn"><i class="fa-regular fa-circle-xmark"></i></button></td>
+                      <td class="product-cell">
+                          <img src="immagini boxes /s1/s1-1.png" alt="">
+                          <span>Pittura Tote bag </span>
+                      </td>
+                      <td class="price">40€</td>
+                      <td><input type="number" value="1" min="1" class="quantity"></td>
+                      <td class="subtotal">40€</td>
+                  </tr>
+              </tbody>
+          </table>
+      </section>
+      
+      
+        <section id="cart-add" class="section-p1">
+          <div id="coupon">
+            <h3>Applica coupon</h3>
+            <div>
+              <input type="text" placeholder="inserisci il codice ">
+              <button class="normal">Applica</button>
+              <br><br><br><br>
+              <h4>Note aggiuntive</h4>
+              <br>
+              <div>
+              <textarea placeholder="aggiungi note  "></textarea>
+            </div>
+            </div>
+          </div>
+          <div id="subtotal">
+            <h3>Totale carrello</h3>
+            <table>
+              <tr>
+                <td> subtotale carrello </td>
+                <td>105 €</td>
+              </tr>
+              <tr>
+                <td>Spedizione </td>
+                <td>gratuita</td>
+              </tr>
+              <tr>
+                <td><strong>Totale </strong></td>
+                <td><strong>105 € </strong></td>
+              </tr>
+            </table>
+            <button id="checkout-btn" class="normal"> Procedi al checkout</button>
+          </div>
+
+
+        </section>
+
+
+         <!------------------ FOOTER ------------------> 
+
+         <section class="footer"> 
+          <div class="row">
+          <div class="col">
+            <a href="index.html">
+            <img src="canva/Logo_rosa.png" class="logo"></a>
+            <p>Perfettamente confezionato, amorevolmente selezionato e curato con attenzione, All Night Long è il servizio che consegna un divertimento unico e pensato con il cuore.</p>
+
+          </div>
+          
+          <div class="col">
+            <h6>Office</h6>
+
+            <ul>
+              <li> <i class="fa-solid fa-map-pin"></i> Via Garibaldi 11 bis,Torino (TO),10122</li>
+              <li> <i class="fa-regular fa-envelope"></i>info.allnightlong@gmail.com</li>
+              <li> <i class="fa-regular fa-phone"></i> 0584 00987</li>
+              <li> <i class="fa-regular fa-clock"></i> 8:30 - 20:00</li>
+           </ul>
+           
+          
+          </div>
+          
+          <div class="col"> 
+              <h6>Links</h6>
+               <ul>
+                  <li> <a href="index.html">Home</a></li>
+                  <li> <a href="about.html">Chi Siamo</a></li>
+                  <li> <a href="shop.html">Shop</a></li>
+                  
+               </ul>
+               <div class="social-icons">
+                   <i class="fa-brands fa-instagram"></i>
+                   <i class="fa-brands fa-tiktok"></i>
+                   <i class="fa-brands fa-threads"></i>
+            
+               </div>
+          </div>
+          <hr>
+          <p class="copyright">All Night Long © 2025 - All Rights Reserved</p>
+        </section> 
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+              const removeButtons = document.querySelectorAll(".remove-btn");
+              const quantityInputs = document.querySelectorAll(".quantity");
+      
+              // Rimuove il prodotto dalla tabella
+              removeButtons.forEach(button => {
+                  button.addEventListener("click", function () {
+                      this.closest("tr").remove();
+                      updateTotal();
+                  });
+              });
+      
+              // Aggiorna il subtotale quando la quantità cambia
+              quantityInputs.forEach(input => {
+                  input.addEventListener("change", function () {
+                      const row = this.closest("tr");
+                      const price = parseFloat(row.querySelector(".price").textContent.replace("€", ""));
+                      const quantity = parseInt(this.value);
+                      const subtotal = price * quantity;
+                      row.querySelector(".subtotal").textContent = subtotal + "€";
+                      updateTotal();
+                  });
+              });
+      
+              function updateTotal() {
+                  let total = 0;
+                  document.querySelectorAll(".subtotal").forEach(sub => {
+                      total += parseFloat(sub.textContent.replace("€", ""));
+                  });
+                  console.log("Totale aggiornato:", total + "€");
+              }
+          });
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  function updateCartTotal() {
+    let total = 0;
+
+    document.querySelectorAll(".cart-item").forEach((row) => {
+      const priceElement = row.querySelector(".price");
+      const quantityInput = row.querySelector(".quantity");
+      const subtotalElement = row.querySelector(".subtotal");
+
+      const price = parseFloat(priceElement.textContent.replace("€", "").trim());
+      const quantity = parseInt(quantityInput.value);
+      const subtotal = price * quantity;
+
+      subtotalElement.textContent = subtotal.toFixed(2) + "€";
+      total += subtotal;
+    });
+
+    // Aggiorna il totale del carrello
+    document.querySelector("#subtotal table tr:nth-child(1) td:nth-child(2)").textContent = total.toFixed(2) + " €";
+    document.querySelector("#subtotal table tr:nth-child(3) td:nth-child(2)").textContent = total.toFixed(2) + " €";
+  }
+
+  // Assegna evento per cambiare la quantità
+  document.querySelectorAll(".quantity").forEach((input) => {
+    input.addEventListener("change", function () {
+      if (this.value < 1) this.value = 1; // Impedisce valori inferiori a 1
+      updateCartTotal();
+    });
+  });
+
+  // Assegna evento per rimuovere articoli
+  document.querySelectorAll(".remove-btn").forEach((button) => {
+    button.addEventListener("click", function () {
+      this.closest(".cart-item").remove();
+      updateCartTotal();
+    });
+  });
+
+  // Calcola il totale iniziale
+  updateCartTotal();
+});
+
+      </script>
+<script>
+    // Assegna evento al bottone checkout per reindirizzare alla pagina checkout.html
+    document.getElementById("checkout-btn").addEventListener("click", function () {
+    window.location.href = "checkout.html"; // Reindirizzamento alla pagina di checkout
+  });
+</script>
+
+
+        <script src=".js"></script>
+    </body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title> Global Boxes </title>
+        <script src="https://kit.fontawesome.com/4e5dc31ccf.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="stile.css">
+        <script type="module">
+
+            import EmbeddedPageSdk from "https://app.realeye.io/sdk/js/testRunnerEmbeddableSdk-1.7.1.js"
+            
+            /**
+             * NOTICE: The SDK MUST be created when the UI is fully loaded and ready.
+             * So, if you are using (modern) frontend framework please use its proper event to create the SDK when everything is ready and fully rendered, instead of the vanilla JS "DOMContentLoaded" event.
+             */
+            window.addEventListener("DOMContentLoaded", () => {
+               const debugMode = false;
+               const stimulusId = null; // Or Stimulus/Item UUID from RealEye Study, e.g. "61560b76-3d31-4f0e-b530-55bd8709aadb"
+               const forceRun = false;
+            
+               const reSdk = new EmbeddedPageSdk(debugMode, stimulusId, forceRun)
+            });
+            
+            </script>
+    </head>
+    <body>
+         <!--------------- HEADER ------------->
+  <section id="header">
+    <a href="index.html">
+        <img src="canva/Logo_rosa.png" width="300" height="60" class="logo" alt="">
+    </a>
+
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+
+        </ul>
+    </div>
+
+  </section>
+
+      <!--------BANNER INIZIALE CON LA SCRITTA /video ---------->
+        <section id="page-header">
+            <section class="hero_shop">
+                
+         <video autoplay muted loop>
+                  <source src="video_shop.mp4" type="video/mp4">
+                 
+                </video>
+                <div class="content">
+                  <h2> Le nostre box </h2>
+                </div>
+              </section>
+              </div>
+            
+
+        </section>
+
+         <!-------------BACK TO ------------->
+
+     <section id="back-section">
+        <a href="index.html" class="back-to">
+            <i class="fas fa-arrow-left"></i>
+            <p> Torna alla Home</p>
+        </a>
+    </section>
+
+        <!----------------PRODOTTI--------------------->
+
+        <section id="box-shop1" class="section-p1">
+            <div class="box-container">
+                <div class="box-item">
+                    <img src="immagini boxes /s1/s1-1.png" alt="">
+                    <div class="box-desc">
+                        <h5>pittura Tote bag </h5>
+                        <h4>40€</h4>
+                    </div>
+                    <a href="sproduct1.html"><i class="fa-regular fa-eye eye"></i></a>
+                </div>
+                <div class="box-item">
+                    <img src="immagini boxes /s2/s2-1.png" alt="">
+                    <div class="box-desc">
+                        <h5>il delitto perfetto</h5>
+                        <h4>45€</h4>
+                    </div>
+                    <a href="sproduct2.html"><i class="fa-regular fa-eye eye"></i></a>
+                </div>
+                <div class="box-item">
+                    <img src="immagini boxes /s3/s3-1.png" alt="">
+                    <div class="box-desc">
+                        <h5>pittura su calici</h5>
+                        <h4>45€</h4>
+                    </div>
+                    <a href="sproduct3.html"><i class="fa-regular fa-eye eye"></i></a>
+                </div>
+                <div class="box-item">
+                    <img src="immagini boxes /s4/s4-1.png" alt="">
+                    <div class="box-desc">
+                        <h5>argilla </h5>
+                        <h4>45€</h4>
+                    </div>
+                    <a href="sproduct4.html"><i class="fa-regular fa-eye eye"></i></a>
+            </div>
+                <div class="box-item">
+                    <img src="immagini boxes /s5/s5-1.png" alt="">
+                    <div class="box-desc">
+                        <h5>uncinetto</h5>
+                        <h4>50€</h4>
+                    </div>
+                    <a href="sproduct5.html"><i class="fa-regular fa-eye eye"></i></a>
+                </div>
+                <div class="box-item">
+                    <img src="immagini boxes /s6/s6-1.png" alt="">
+                    <div class="box-desc">
+                        <h5>creazione bracciali </h5>
+                        <h4> 40€</h4>
+                    </div>
+                    <a href="sproduct6.html"><i class="fa-regular fa-eye eye"></i></a>
+                </div>
+                <div class="box-item">
+                    <img src="immagini boxes /s7/s7-1.png" alt="">
+                    <div class="box-desc">
+                        <h5>ricette creative</h5>
+                        <h4>45€</h4>
+                    </div>
+                    <a href="sproduct7.html"><i class="fa-regular fa-eye eye"></i></a>
+                </div>
+                <div class="box-item">
+                    <img src="immagini boxes /s8/s8-1.png" alt="">
+                    <div class="box-desc">
+                        <h5>Mocktails: la sfida </h5>   
+                        <h4> 50€</h4>
+                    </div>
+                    <a href="sproduct8.html"><i class="fa-regular fa-eye eye"></i></a>
+                </div>
+                <div class="box-item">
+                    <img src="immagini boxes /s9/s9-1.png" alt="">
+                    <div class="box-desc">
+                        <h5>skin care</h5>   
+                        <h4>35€</h4>
+                    </div>
+                    <a href="sproduct9.html"><i class="fa-regular fa-eye eye"></i></a>
+                </div>
+            </div>
+        </section>
+        
+
+      <!------------GET INSPIRED-------------->
+
+      <section id="image-gallery" class="section-p1">
+        <h1 class="gallery-title"># Lasciati Ispirare</h1>
+        <div class="gallery-container">
+          <div class="image-card"><img src="getinspired/totebag/t4.jpg" ></div>
+          <div class="image-card"><img src="getinspired/gamenight/g7.jpg" ></div>
+          <div class="image-card"><img src="getinspired/wineglasspainting/w8.jpg" ></div>
+          <div class="image-card"><img src="getinspired/clay/clay7.jpg" ></div>
+          <div class="image-card"><img src="getinspired/uncinetto/c7.jpg" ></div>
+          <div class="image-card"><img src="getinspired/braccialetti/br8.jpg" ></div>
+          <div class="image-card"><img src="getinspired/drink/d6.jpg" ></div>
+          <div class="image-card"><img src="getinspired/biscotti/b2.jpg"></div>
+          <div class="image-card"><img src="getinspired/totebag/t6.jpg" ></div>
+          <div class="image-card"><img src="getinspired/clay/clay3.jpg" ></div>
+        </div>
+      </section>
+       <!-----------PERFETTO PER ------------->
+       <section id="banner3"> 
+        <br>
+        <h2 id="banner3-title"># All Night Long</h2>
+        <h2>Perfetto Per.....</h2>
+        <br><br>
+        <div class="items-wrapper">
+            <div class="item">
+                <img src="PerferttoPer/2.jpg" class="item-image">
+                <p class="item-description">Divertirsi con gli amici</p>
+            </div>
+    
+            <div class="item">
+                <img src="PerferttoPer/6.jpg" class="item-image">
+                <p class="item-description"> Rilassarsi in solitaria</p>
+            </div>
+    
+            <div class="item">
+                <img src="PerferttoPer/5.jpg" class="item-image">
+                <p class="item-description"> Appuntamenti romantici</p>
+            </div>
+    
+            <div class="item">
+                <img src="PerferttoPer/7.jpg" class="item-image">
+                <p class="item-description"> Regali originali</p>
+            </div>
+        </div>
+    </section>
+
+    <!----------PROMO SECTION----------->
+    <section class="promo-section">
+        <h2>NON TI ABBIAMO ANCORA CONVINTO?</h2>
+        <p class="promo-text">Registrati per ottenere il <span>10% di sconto</span> sul primo ordine</p>
+        <form class="promo-form">
+            <input type="email" placeholder="Inserisci la tua email" required>
+            <button type="submit">Invia</button>
+        </form>
+    </section>
+
+ <!------------------ FOOTER ------------------> 
+ <section class="footer"> 
+  <div class="row">
+  <div class="col">
+    <a href="index.html">
+    <img src="canva/Logo_rosa.png" class="logo"></a>
+    <p>Perfettamente confezionato, amorevolmente selezionato e curato con attenzione, All Night Long è il servizio che consegna un divertimento unico e pensato con il cuore.</p>
+
+  </div>
+  
+  <div class="col">
+    <h6>Office</h6>
+
+    <ul>
+      <li> <i class="fa-solid fa-map-pin"></i>  Via Garibaldi 11 bis,Torino (TO),10122</li>
+      <li> <i class="fa-regular fa-envelope"></i> info.allnightlong@gmail.com</li>
+      <li> <i class="fa-regular fa-phone"></i> 0584 00987</li>
+      <li> <i class="fa-regular fa-clock"></i> 8:30 - 20:00</li>
+   </ul>
+   
+  
+  </div>
+  
+  <div class="col"> 
+      <h6>Links</h6>
+       <ul>
+          <li> <a href="index.html">Home</a></li>
+          <li> <a href="about.html">Chi Siamo</a></li>
+          <li> <a href="shop.html"> Shop</a></li>
+       </ul>
+       <div class="social-icons">
+           <i class="fa-brands fa-instagram"></i>
+           <i class="fa-brands fa-tiktok"></i>
+           <i class="fa-brands fa-threads"></i>
+    
+       </div>
+  </div>
+  <hr>
+  <p class="copyright">All Night Long © 2025 - All Rights Reserved</p>
+</section> 
+
+
+        <script src=".js"></script>
+    </body>
+</html>

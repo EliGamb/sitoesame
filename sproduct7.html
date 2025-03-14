@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title> Global Boxes </title>
+        <script src="https://kit.fontawesome.com/4e5dc31ccf.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="stile.css">
+        <script type="module">
+
+            import EmbeddedPageSdk from "https://app.realeye.io/sdk/js/testRunnerEmbeddableSdk-1.7.1.js"
+            
+            /**
+             * NOTICE: The SDK MUST be created when the UI is fully loaded and ready.
+             * So, if you are using (modern) frontend framework please use its proper event to create the SDK when everything is ready and fully rendered, instead of the vanilla JS "DOMContentLoaded" event.
+             */
+            window.addEventListener("DOMContentLoaded", () => {
+               const debugMode = false;
+               const stimulusId = null; // Or Stimulus/Item UUID from RealEye Study, e.g. "61560b76-3d31-4f0e-b530-55bd8709aadb"
+               const forceRun = false;
+            
+               const reSdk = new EmbeddedPageSdk(debugMode, stimulusId, forceRun)
+            });
+            
+            </script>
+    
+    </head>
+    <body>
+        <!----------HEADER----------->
+        <section id="header">
+            <a href="index.html">
+                <img src="canva/Logo_rosa.png" width="300" height="60" class="logo" alt="">
+            </a>
+        
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+        
+                </ul>
+            </div>
+        
+          </section>
+        
+           <!-------------BACK TO ------------->
+
+     <section id="back-section">
+        <a href="shop.html" class="back-to">
+            <i class="fas fa-arrow-left"></i>
+            <p> Torna allo Shop</p>
+        </a>
+    </section>
+
+
+        <!----------IMMAGINI PRODOTTO--------->
+ <section id="prodetails" class="section-p1">
+    <div class="single-pro-image">
+        <img src="immagini boxes /s7/s7-1.png" width="100%" id="MainImg" alt="">
+        <div class="small-img-group">
+            <div class="small-img-col">
+                <img src="immagini boxes /s7/s7-4.jpeg" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="immagini boxes /s7/s7-2.png" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="immagini boxes /s7/s7-3.png" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="immagini boxes /acc/Box.png" width="100%" class="small-img" alt="">
+            </div>
+        </div>
+    </div>
+<!-----------DETTAGLI PRODOTTO DX------------>
+<div class="product-info">
+    <h4 class="product-name">Ricette creative</h4>
+    <p class="product-price">45€</p>
+    <p class="product-description">
+        <strong>Cosa contiene:</strong></p>
+        <ul>
+            <li> ❉ Preparato per biscotti (mix di farina, zucchero, lievito e spezie)</li>
+            <li> ❉ Stampini per biscotti (varie forme: cuori, stelle, fiori, animali, natalizi, ecc.)</li>
+            <li> ❉ Mattarello piccolo (per stendere la pasta)</li>
+            <li> ❉ Tagliapasta e spatolina (per maneggiare l’impasto)</li>
+            <li> ❉ Coloranti alimentari in gel </li>
+            <li> ❉ Pasta di zucchero di vari colori (per dettagli decorativi)</li>
+            <li> ❉ Zuccherini colorati e glitter alimentari ✨ </li>
+            <li> ❉ Pennarelli alimentari (per disegnare direttamente sui biscotti) </li>
+            <li> ❉ Sac à poche con beccucci vari (per decorazioni di precisione) </li>
+            <li> ❉ Stuzzicadenti (per dettagli di precisione) </li>
+            <br>
+            <li>📖 Ricetta dettagliata con passaggi chiari</li>
+            <li> 📌 Suggerimenti su come fare decorazioni perfette</li>
+            <li> 📸 Idee creative per biscotti tematici </li>
+            <li> 🎶 QR code con playlist a tema “baking & relaxing”</li>
+            <li>🕯️ Mini candela profumata (vaniglia, cannella o cioccolato)</li>
+        </ul>
+    <br>
+    <div class="product-select">
+        <label for="quantity"> Numero partecipanti:</label>
+        <select id="quantity" name="quantity">
+            <option value="1">1 persona</option>
+            <option value="2">2 persone</option>
+            <option value="3">3 persone</option>
+            <option value="4">4 persone</option>
+            <option value="5">5 persone</option>
+        </select>
+    </div>
+        <button class="add-to-cart-btn"> Acquista</button>
+</div>
+</div>
+
+ </section>
+
+ <!------------COSA C'E ALL'INTERNO------------->
+
+ <section id="productSection" class="section-p1">
+    <h2>Dentro la Box</h2>
+
+    <!-- Contenitore dello slideshow -->
+    <div class="slideshow-container">
+        <button class="slide-button prev" onclick="slide(-1)">&#10094;</button>
+
+        <div class="scroll-wrapper">
+            <div class="scroll-container">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="dentro la box/cooking/1.png"  class="product-image">
+                    </div>
+                    <div class="product-description">
+                        <h5>Preparato per dolci</h5>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                   </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="dentro la box/cooking/2.png" class="product-image">
+                    </div>
+                    <div class="product-description">
+                        <h5>colorante</h5>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="dentro la box/cooking/3.png" class="product-image">
+                    </div>
+                    <div class="product-description">
+                        <h5>decorazioni</h5>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="dentro la box/cooking/4.png"  class="product-image">
+                    </div>
+                    <div class="product-description">
+                        <h5>Stampini</h5>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                    </div>
+                </div>
+
+ <!--               <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="dentro la box/s7/colorante.jpg"product-image">
+                    </div>
+                    <div class="product-description">
+                        <h5>Coloranti alimentari</h5>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="dentro la box/s7/pasta.jpg"  class="product-image">
+                    </div>
+                    <div class="product-description">
+                        <h5> Pasta di zucchero</h5>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="dentro la box/s7/decoraizoni.jpg" class="product-image">
+                    </div>
+                    <div class="product-description">
+                        <h5>Zuccherini</h5>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="dentro la box/s7/pennarelli.jpg"  class="product-image">
+                    </div>
+                    <div class="product-description">
+                        <h5>Pennarelli alinemtari</h5>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="dentro la box/s7/sac.jpg" class="product-image">
+                    </div>
+                    <div class="product-description">
+                        <h5>Sac à poche</h5>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="dentro la box/s7/stuzzicadenti-di-legno-che-cadono-nel-mucchio-su-priorita-bassa-bianca_495423-40355.jpg"  class="product-image">
+                    </div>
+                    <div class="product-description">
+                        <h5>Stuzzicadenti</h5>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                    </div>
+                </div>
+-->
+            
+
+            </div>
+        </div>
+
+        <button class="slide-button next" onclick="slide(1)">&#10095;</button>
+    </div>
+</section>
+
+
+  <!-----------PERFETTO PER ------------->
+      <section id="banner3"> 
+        <br>
+        <h2 id="banner3-title"># All Night Long</h2>
+        <h2>Perfetto Per.....</h2>
+        <br><br>
+        <div class="items-wrapper">
+            <div class="item">
+                <img src="PerferttoPer/1.jpg" class="item-image">
+                <p class="item-description">Divertirsi con gli amici</p>
+            </div>
+    
+            <div class="item">
+                <img src="PerferttoPer/2.jpg" class="item-image">
+                <p class="item-description"> Provare nuove esperienze</p>
+            </div>
+    
+            <div class="item">
+                <img src="PerferttoPer/3.jpg" class="item-image">
+                <p class="item-description"> Dare sfogo alla fantasia</p>
+            </div>
+    
+            <div class="item">
+                <img src="PerferttoPer/4.jpg" class="item-image">
+                <p class="item-description"> Passare serate alternative</p>
+            </div>
+        </div>
+    </section>
+
+      <!------------GETINSPIRED------->
+      <section id="image-gallery" class="section-p1">
+        <h1 class="gallery-title"># Lasciati Ispirare</h1>
+        <div class="gallery-container">
+          <div class="image-card"><img src="getinspired/biscotti/b1.jpg" ></div>
+          <div class="image-card"><img src="getinspired/biscotti/b10.jpg" ></div>
+          <div class="image-card"><img src="getinspired/biscotti/b2.jpg" ></div>
+          <div class="image-card"><img src="getinspired/biscotti/b3.jpg" ></div>
+          <div class="image-card"><img src="getinspired/biscotti/b4.jpg" ></div>
+          <div class="image-card"><img src="getinspired/biscotti/b5.jpg" ></div>
+          <div class="image-card"><img src="getinspired/biscotti/b6.jpg" ></div>
+          <div class="image-card"><img src="getinspired/biscotti/b7.jpg"></div>
+          <div class="image-card"><img src="getinspired/biscotti/b8.jpg" ></div>
+          <div class="image-card"><img src="getinspired/biscotti/b9.jpg" ></div>
+        </div>
+      </section>
+
+       <!-- Recensioni + Slideshow-->
+       <section id="product1-review" class="section-p1">
+        <h2>Cosa dicono di noi</h2>
+        <br>
+        <div class="slider-container">
+            <div class="pro-container-review">
+                <div class="review-card">
+                    <div class="review-header">
+                        <h5 class="user-name">
+                            Mario R. 
+                            <i class="fa-solid fa-circle-check verified-icon"></i>
+                        </h5>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">"Esperienza fantastica! La box era curata nei minimi dettagli e ha reso la serata con la mia ragazza davvero speciale. I prodotti inclusi erano di qualità e ben selezionati. Sicuramente acquisterò di nuovo!"</p>
+                    <span class="location">📍 Milano, Italia</span>
+                </div>
+    
+                <div class="review-card">
+                    <div class="review-header">
+                        <h5 class="user-name">
+                            Giulia S.
+                            <i class="fa-solid fa-circle-check verified-icon"></i>
+                        </h5>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> <!-- 4 stelle -->
+                        </div>
+                    </div>
+                    <p class="review-text">"Un’idea geniale per passare una serata diversa! Abbiamo provato la box con gli amici ed è stato super divertente. Ottima selezione di giochi e snack, tutto confezionato con grande cura. Consigliatissima!"</p>
+                    <span class="location">📍 Roma, Italia</span>
+                </div>
+
+                <div class="review-card">
+                  <div class="review-header">
+                      <h5 class="user-name">
+                          Luca V.
+                          <i class="fa-solid fa-circle-check verified-icon"></i>
+                      </h5>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                      </div>
+                  </div>
+                  <p class="review-text">"Non pensavo che una semplice box potesse creare un’atmosfera così magica! Perfetta per un appuntamento speciale, tutto scelto con attenzione. Consegna puntuale e packaging bellissimo. La riprenderò!"</p>
+                  <span class="location">📍 Torino, Italia</span>
+              </div>
+  
+              <div class="review-card">
+                <div class="review-header">
+                    <h5 class="user-name">
+                        Serena B.
+                        <i class="fa-solid fa-circle-check verified-icon"></i>
+                    </h5>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <p class="review-text">"Abbiamo ricevuto la box come regalo e ci è piaciuta tantissimo! Perfetta per una serata rilassante in coppia, con sorprese davvero originali. Un’ottima alternativa alle solite uscite!"</p>
+                <span class="location">📍 Napoli, Italia</span>
+            </div>
+
+            <div class="review-card">
+              <div class="review-header">
+                  <h5 class="user-name">
+                      Andrea P. 
+                      <i class="fa-solid fa-circle-check verified-icon"></i>
+                  </h5>
+                  <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                  </div>
+              </div>
+              <p class="review-text">"Ottima esperienza! Ho scelto la box per una serata con gli amici e ci siamo divertiti un sacco. Giochi coinvolgenti, ottimi drink e una selezione di snack perfetta. Ne proveremo sicuramente un’altra!"</p>
+              <span class="location">📍 Firenze, Italia</span>
+          </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <h5 class="user-name">
+                            Valentina M.
+                            <i class="fa-solid fa-circle-check verified-icon"></i>
+                        </h5>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">"Tutto perfetto! La box era ben confezionata e con una selezione molto curata. Abbiamo passato una serata davvero alternativa e divertente. Un’idea regalo fantastica per chi ama le esperienze particolari!"</p>
+                    <span class="location">📍 Bologna, Italia</span>
+                </div>
+
+                <div class="review-card">
+                  <div class="review-header">
+                      <h5 class="user-name">
+                          Marco D.
+                          <i class="fa-solid fa-circle-check verified-icon"></i>
+                      </h5>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                      </div>
+                  </div>
+                  <p class="review-text">"Esperienza bellissima! Abbiamo provato la box per coppie ed è stata una serata diversa dal solito, piena di dettagli romantici. Il servizio clienti è stato disponibile e gentile. Sicuramente da ripetere!"</p>
+                  <span class="location">📍 Genova, Italia</span>
+              </div>
+
+              <div class="review-card">
+                  <div class="review-header">
+                      <h5 class="user-name">
+                          Elisa F.
+                          <i class="fa-solid fa-circle-check verified-icon"></i>
+                      </h5>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                      </div>
+                  </div>
+                  <p class="review-text">"Ho acquistato la box per il compleanno del mio fidanzato ed è stata un successo! Tutto perfetto, dagli accessori ai piccoli dettagli. Una vera sorpresa che ha reso la serata indimenticabile!"</p>
+                  <span class="location">📍 Verona, Italia</span>
+              </div>
+
+              <div class="review-card">
+                  <div class="review-header">
+                      <h5 class="user-name">
+                          Francesco C.
+                          <i class="fa-solid fa-circle-check verified-icon"></i>
+                      </h5>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                      </div>
+                  </div>
+                  <p class="review-text">"Idea fantastica per chi vuole vivere un’esperienza diversa! La box conteneva esattamente ciò di cui avevamo bisogno per una serata rilassante e divertente. Consegna veloce e packaging molto elegante!"</p>
+                  <span class="location">📍 Palermo, Italia</span>
+              </div>
+
+              <div class="review-card">
+                  <div class="review-header">
+                      <h5 class="user-name">
+                       Martina G.
+                          <i class="fa-solid fa-circle-check verified-icon"></i>
+                      </h5>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                      </div>
+                  </div>
+                  <p class="review-text">"Abbiamo scelto questa box per una serata tra amici e ci siamo trovati benissimo! L’idea è originale, i materiali di qualità e tutto è curato nei dettagli. Davvero un acquisto super azzeccato!"</p>
+                  <span class="location">📍 Venezia, Italia</span>
+              </div>
+
+            </div>
+        </div>
+    </section>
+
+ <!------------------ FOOTER ------------------> 
+
+ <section class="footer"> 
+    <div class="row">
+    <div class="col">
+        <a href="index.html">
+      <img src="canva/Logo_rosa.png" class="logo"></a>
+      <p>Perfettamente confezionato, amorevolmente selezionato e curato con attenzione, All Night Long è il servizio che consegna un divertimento unico e pensato con il cuore.</p>
+
+    </div>
+    
+    <div class="col">
+      <h6>Office</h6>
+
+      <ul>
+        <li> <i class="fa-solid fa-map-pin"></i> Via Garibaldi 11 bis,Torino (TO),10122</li>
+        <li> <i class="fa-regular fa-envelope"></i>info.allnightlong@gmail.com</li>
+        <li> <i class="fa-regular fa-phone"></i> 0584 00987</li>
+        <li> <i class="fa-regular fa-clock"></i> 8:30 - 20:00</li>
+     </ul>
+     
+    
+    </div>
+    
+    <div class="col"> 
+        <h6>Links</h6>
+         <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="about.html">Chi Siamo</a></li>
+            <li> <a href="shop/"> Shop</a></li>
+         </ul>
+         <div class="social-icons">
+             <i class="fa-brands fa-instagram"></i>
+             <i class="fa-brands fa-tiktok"></i>
+             <i class="fa-brands fa-threads"></i>
+      
+         </div>
+    </div>
+    <hr>
+    <p class="copyright">All Night Long © 2025 - All Rights Reserved</p>
+  </section> 
+        <script>
+            var MainImg = document.getElementById("MainImg");
+            var smallimg = document.getElementsByClassName("small-img");
+
+            smallimg[0].onclick = function(){
+                MainImg.src = smallimg[0].src;
+            } 
+            smallimg[1].onclick = function(){
+                MainImg.src = smallimg[1].src;
+            } 
+            smallimg[2].onclick = function(){
+                MainImg.src = smallimg[2].src;
+            }  
+            smallimg[3].onclick = function(){
+                MainImg.src = smallimg[3].src;
+            } 
+        </script>
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+const slider = document.querySelector(".pro-container-review");
+const reviews = slider.innerHTML; // Duplica le recensioni per scorrimento infinito
+slider.innerHTML += reviews;  
+
+let speed = 0.5; // Velocità più lenta
+let scrollAmount = 0;
+
+function scrollLoop() {
+    scrollAmount += speed;
+    if (scrollAmount >= slider.scrollWidth / 2) {
+        scrollAmount = 0; // Resetta quando arriva a metà (effetto infinito)
+    }
+    slider.style.transform = `translateX(-${scrollAmount}px)`;
+    requestAnimationFrame(scrollLoop);
+}
+
+scrollLoop();
+});
+
+  </script>
+  
+  <script>
+    const scrollContainer = document.querySelector(".scroll-container");
+    const cardWidth = document.querySelector(".product-card").offsetWidth + 20; // Card width + gap
+
+    function slide(direction) {
+        scrollContainer.scrollBy({
+            left: direction * cardWidth * 2, // Scorre 2 card alla volta
+            behavior: "smooth"
+        });
+    }
+</script>
+
+
+
+    
+    </body>
+</html>
